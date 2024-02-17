@@ -1,30 +1,30 @@
 <template>
-	<div v-show="timer.active" class="countdown mt-5 flex items-center justify-center w-full max-w-screen-xl p-3 m-auto">
-		<div class="countdown__wrapper flex justify-center">
+	<div v-show="timer.active" class="countdown py-12 mt-5 flex items-center justify-center w-full max-w-screen-xl p-3 m-auto">
+		<div class="countdown__wrapper">
 			<div>
-				<h3 class="counter__text">Iniciamos en:</h3>
+				<h3 class="counter__title">Iniciamos en:</h3>
 			</div>
 			<div class="counter__timer">
-				<div
-					class="counter__timer__item simply-days">
-					{{ timer.days }}d
+				<div class="counter__timer__item simply-days">
+                    <span class="counter__timer__item__number">{{ timer.days }}:</span>
+                    <span class="counter__timer__item__text">Días</span>
 				</div>
-				<div
-					class="counter__timer__item simply-hours">
-					{{ timer.hours }}h
+				<div class="counter__timer__item simply-hours">
+                    <span class="counter__timer__item__number">{{ timer.hours }}:</span>
+                    <span class="counter__timer__item__text">Horas</span>
 				</div>
-				<div
-					class="counter__timer__item simply-minutes">
-					{{ timer.minutes }}m
+				<div class="counter__timer__item simply-minutes">
+                    <span class="counter__timer__item__number">{{ timer.minutes }}:</span>
+                    <span class="counter__timer__item__text">Minutos</span>
 				</div>
-				<div
-					class="counter__timer__item simply-seconds">
-					{{ timer.seconds }}s
+				<div class="counter__timer__item simply-seconds">
+                    <span class="counter__timer__item__number">{{ timer.seconds }}</span>
+                    <span class="counter__timer__item__text">Segundos</span>
 				</div>
 			</div>
 			<div>
-				<button class="lg:flex lg:justify-end border ml-auto rounded-full px-10 py-2">
-                    <a href="#" class="text-black text-sm font-normal">Más información</a>
+				<button class="lg:flex lg:justify-end border border-black ml-auto rounded-full px-10 py-3 mt-10 md:mt-0">
+                    <a href="#" class="text-black text-sm font-bold text-nowrap">Más información</a>
                 </button>
 			</div>
 		</div>
@@ -114,16 +114,60 @@ export default defineComponent({
 <style lang="scss" scoped>
 .countdown__wrapper {
     width: 100%;
-    border: 1px solid #000;
     display: flex;
-}
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    .counter__title {
+        font-size: 18px;
+        line-height: 37px;
+        font-weight: 500;
+    }
+    
+    .counter__timer {
+        display: flex;
+        gap: 30px;
+    
+        .counter__timer__item {
+            background: #fff;
+            font-size: 25px;
+            font-weight: 600;
+            line-height: 49.5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            &__text {
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 24px;
+            }
+        }
+    }
 
-.counter__timer {
-    background-color: tomato;
+    @media (min-width: 900px) {
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
 
-    .counter__timer__item {
-        background: #fff;
-        font-size: 45px;
+        .counter__title {
+            font-size: 25px;
+        }
+
+        .counter__timer {
+            gap: 70px;
+
+            .counter__timer__item {
+                font-size: 45px;
+
+                &__text {
+                    font-size: 16px;
+                }
+            }
+        }
+        
     }
 }
+
 </style>
