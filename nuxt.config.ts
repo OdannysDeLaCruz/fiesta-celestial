@@ -1,6 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  ssr: false,
+  ssr: true,
   devtools: { enabled: true },
   css: ['~/assets/css/main.css'],
   postcss: {
@@ -23,7 +23,17 @@ export default defineNuxtConfig({
     }
   },
   modules: [
-    '@nuxt/content'
+    '@nuxt/content',
+	['nuxt-mail', {
+      message: {
+        to: 'el_odanis321@hotmail.com',
+      },
+      smtp: {
+        host: "mail.cejes.com",
+        port: 465,
+      },
+    }]
   ],
-  
+
+
 })

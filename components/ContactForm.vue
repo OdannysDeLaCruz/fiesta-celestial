@@ -29,6 +29,7 @@
 
 <script lang="ts" setup>
 const { send } = useSendEmail()
+const mail = useMail()
 import type { ContactForm } from '~/types';
 
 const contactForm: ContactForm = reactive({
@@ -40,7 +41,12 @@ const contactForm: ContactForm = reactive({
 
 const submit = async () => {
 	console.log(contactForm)
-	await send(contactForm)
+	// await send(contactForm)
+	mail.send({
+		from: contactForm.email,
+		subject: 'Incredible',
+		text: contactForm.message,
+	})
 }
 </script>
 
