@@ -31,6 +31,10 @@ export default defineNuxtConfig({
       smtp: {
         host: "mail.cejes.com",
         port: 465,
+		auth: {
+			user: '_mainaccount@cejes.com',
+			pass: '#2_2Sm|83xU9}4G',
+		}
       },
     }]
   ],
