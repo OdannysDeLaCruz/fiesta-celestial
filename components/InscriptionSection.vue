@@ -47,6 +47,10 @@ defineProps({
   reverse: {
     type: Boolean,
     default: false
+  },
+  sectionId: {
+	type: String,
+	default: ''
   }
 })
 
@@ -66,7 +70,7 @@ const closeModal = () => {
 
 </script>
 <template>
-  <section class="w-full flex justify-center items-center p-10">
+  <section class="w-full flex justify-center items-center p-5 lg:p-10" :id="sectionId">
     <div class="relative">
       <div 
         class="max-w-screen-xl m-auto grid grid-rows-1 grid-cols-1 lg:grid-cols-2 lg:grid-rows-1 rounded-lg overflow-hidden relative"
@@ -87,26 +91,25 @@ const closeModal = () => {
           ]" v-html="text"></p>
     
           <div class="flex gap-2 lg:gap-10 mt-10 flex-wrap">
-            <button class="inscription-button text-nowrap flex justify-center border rounded-full px-12 py-4">
-              <a :href="inscriptionLink" class="text-sm font-medium">Inscríbete aquí</a>
+            <button class="inscription-button text-nowrap flex justify-center border rounded-full px-5 lg:px-12 py-2 lg:py-4">
+              <a :href="inscriptionLink" target="_blank" class="text-sm lg:text-md font-medium">Inscríbete aquí</a>
             </button>
             <button 
-              class="flex justify-center text-nowrap bg-none border rounded-full px-12 py-4" 
+              class="flex justify-center text-nowrap bg-none border rounded-full px-3 lg:px-12 py-2 lg:py-4" 
               :class="[textColor === 'white' ? 'text-white border-white' : 'text-black border-black']"
-              @click="openModal"
             >
-              <a href="#" class="text-sm font-medium">Requisitos</a>
+              <span href="#" class="text-sm lg:text-md font-medium">Descargar requisitos en PDF</span>
             </button>
           </div>
         </div>
         <!-- Imagen principal -->
         <div :class="[reverse ? 'lg:row-start-1 lg:col-start-1 lg:col-end-2' : 'lg:row-start-1 lg:col-start-2 lg:col-end-3']">
-          <img class="w-full h-full object-cover" :src="`/images/inscripciones/${image}`" :alt="title">
+          <NuxtImg class="w-full h-full object-cover" :src="`/images/inscripciones/${image}`" :alt="title" sizes="100%" />
         </div>
       </div>
 
       <!-- Imagen central -->
-      <img v-if="imageCentral" class="image-central hidden lg:block" :class="imageCentralPosition" :src="`/images/inscripciones/${imageCentral}`" :alt="imageCentral">
+      <NuxtImg v-if="imageCentral" class="image-central hidden lg:block" :class="imageCentralPosition" :src="`/images/inscripciones/${imageCentral}`" :alt="imageCentral" sizes="200px" />
     </div>
   </section>
 

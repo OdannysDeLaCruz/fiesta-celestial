@@ -1,5 +1,5 @@
 <template>
-	<div v-show="timer.active" class="countdown py-12 mt-5 flex items-center justify-center w-full max-w-screen-xl p-3 m-auto">
+	<div v-show="timer.active" class="countdown py-12 mt-5 flex items-center justify-center w-full max-w-screen-md p-3 m-auto">
 		<div class="countdown__wrapper">
 			<div>
 				<h3 class="counter__title">Iniciamos en:</h3>
@@ -22,11 +22,11 @@
                     <span class="counter__timer__item__text">Segundos</span>
 				</div>
 			</div>
-			<div>
+			<!-- <div>
 				<button class="lg:flex lg:justify-end border border-black ml-auto rounded-full px-10 py-3 mt-10 md:mt-0">
                     <a href="#" class="text-black text-sm font-bold text-nowrap">Más información</a>
                 </button>
-			</div>
+			</div> -->
 		</div>
 	</div>
 </template>
@@ -39,17 +39,6 @@ export default defineComponent({
 	components: {
 	},
 	setup() {
-        const design = computed(() => {
-			return {
-				backgroundTimer: '',
-				timerTitle: 'title',
-				timerText: 'timer text',
-				timerBackground: 'red',
-				tagText: 'tag text',
-				tagBackground: 'blue',
-			}
-		})
-
 		const timer = ref({
 			days: 0,
 			hours: 0,
@@ -93,7 +82,7 @@ export default defineComponent({
 		}
 
 		const updateTimer = () => {
-			timer.value = defineTimer('2024-04-27 00:00:00')
+			timer.value = defineTimer('2024-05-02 00:00:00')
 		}
 		
 		onBeforeMount(() => {
@@ -105,7 +94,6 @@ export default defineComponent({
 		})
 
 		return {
-			design,
 			timer,
 		}
 	},

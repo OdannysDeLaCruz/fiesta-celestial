@@ -12,12 +12,12 @@ watch(route, () => {
     <header class="header flex items-center justify-center h-24 sticky top-0 z-10">
         <section class="h-full flex items-center justify-between w-full max-w-screen-xl p-3">
             <nav class="w-full flex items-center justify-between" aria-label="Global">
-                <a href="#" class="flex lg:hidden text-white text-sm font-normal">Inicio</a>
+				<NuxtLink to="/" class="flex lg:hidden text-white text-sm font-normal">Inicio</NuxtLink>
                 <div class="hidden lg:flex lg:gap-x-12">
                     <NuxtLink to="/" class="text-white text-sm font-normal">Inicio</NuxtLink>
                     <NuxtLink to="/nosotros" class="text-white text-sm font-normal">Nosotros</NuxtLink>
                     <NuxtLink to="/inscripciones" class="text-white text-sm font-normal">Inscripciones</NuxtLink>
-                    <NuxtLink to="/haz-parte" class="text-white text-sm font-normal">Haz parte</NuxtLink>
+                    <!-- <NuxtLink to="/haz-parte" class="text-white text-sm font-normal">Haz parte</NuxtLink> -->
                 </div>
                 <button class="hidden lg:flex lg: lg:justify-end border ml-auto rounded-full px-10 py-2">
                     <NuxtLink to="/#contacto" class="text-white text-sm font-normal">Contacto</NuxtLink>
@@ -53,7 +53,7 @@ watch(route, () => {
                                 <NuxtLink to="/" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Inicio</NuxtLink>
                                 <NuxtLink to="/nosotros" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Nosotros</NuxtLink>
                                 <NuxtLink to="/inscripciones" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Inscripciones</NuxtLink>
-                                <NuxtLink to="/haz-parte" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Haz parte</NuxtLink>
+                                <!-- <NuxtLink to="/haz-parte" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Haz parte</NuxtLink> -->
                                 <NuxtLink to="/#contacto" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-red-600 hover:bg-gray-50">Contacto</NuxtLink>
                             </div>
                         </div>

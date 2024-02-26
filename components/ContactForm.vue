@@ -28,7 +28,6 @@
 </template>
 
 <script lang="ts" setup>
-const { send } = useSendEmail()
 const mail = useMail()
 import type { ContactForm } from '~/types';
 

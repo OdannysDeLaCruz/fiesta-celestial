@@ -1,8 +1,8 @@
 <template>
-  <section id="contacto" class="contact-form w-full p-20 bg-gray-100 ">
-    <div class="contact-form__wrapper max-w-screen-xl m-auto bg-white flex flex-col lg:grid lg:grid-cols-2 gap-10 lg:gap-28 px-24 py-20 rounded-xl">
+  <section id="contacto" class="contact-form w-full p-5 py-7 lg:py-20 bg-gray-100">
+    <div class="contact-form__wrapper max-w-screen-xl m-auto bg-white flex flex-col lg:grid lg:grid-cols-2 gap-10 lg:gap-28 p-5 lg:px-24 py-7 lg:py-20 rounded-xl">
       <div class="contact-form__map"> 
-        <div class="flex justify-between items-center mb-8">
+        <div class="flex justify-center items-center lg:justify-between items-center flex-col lg:flex-row  mb-8">
           <h4 class="text-bold text-3xl">Contacto</h4>
           <div>
             <strong class="text-sm">Linea de atención:</strong><br>
@@ -10,7 +10,7 @@
           </div>
         </div>
         <div class="rounded-lg overflow-hidden">
-          <img class="w-full" src="/images/map.png" alt="Dirección | Calle 13A #9-26 Barrio Cañahuate">
+          <NuxtImg class="w-full" src="/images/map.webp" alt="Dirección | Calle 13A #9-26 Barrio Cañahuate" sizes="600px" />
         </div>
         <div class="flex flex-col mt-8">
           <span><strong>Dirección:</strong>  Calle 13A #9-26 Barrio Cañahuate</span>

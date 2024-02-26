@@ -1,10 +1,16 @@
 <script lang="ts" setup>
+useHead({
+	title: 'Bienvenido',
+	meta: [
+		{ name: 'description', content: 'Pagina de bienvenida a Fiesta Celestial 2024.' }
+	]
+})
 </script>
 <template>
 	<MainCarousel />
 	<section class="la-fiesta-mas-bonita-section mt-5 flex items-center justify-between w-full max-w-screen-xl p-3 m-auto">
 		<div class="video__home">
-			<iframe width="100%" height="100%" src="https://www.youtube.com/embed/XGdvOkO1xAU"
+			<iframe loading="lazy" width="100%" height="100%" src="https://www.youtube.com/embed/XGdvOkO1xAU"
 				title="Fiesta Celestial - La Fiesta Más Bonita" frameborder="0"
 				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 				allowfullscreen></iframe>
@@ -13,12 +19,12 @@
 			<img class="absolute -top-8 right-10" src="~/assets/icons/estrella-verde.svg" alt="">
 			<h1 class="text-2xl font-bold mb-9">La fiesta más bonita</h1>
 			<p class="text-base">Fiesta celestial es un evento cristiano de música gospel, en el genero vallenato que se ha
-				extendido en el mundo y se desarrolla en Valledupar. <br> <br>Es organizado por la iglesia cejes central...
+				extendido en el mundo y se desarrolla en Valledupar. <br> <br>Es organizado por la iglesia cejes central.
 			</p>
 
-			<button class="flex justify-center border ml-auto rounded-full px-10 py-2 bg-red-500 w-full mt-20">
+			<!-- <button class="flex justify-center border ml-auto rounded-full px-10 py-2 bg-red-500 w-full mt-20">
 				<a href="#" class="text-white text-sm font-normal">Conoce más</a>
-			</button>
+			</button> -->
 		</div>
 	</section>
 
@@ -48,12 +54,12 @@
 				<p class="text-white">Disfruta de toda esta experiencia en vivo solo por YouTube ¡Suscríbete!</p>
 
 				<button class="lg:flex lg:justify-end rounded-full px-10 py-3 mt-5">
-					<a href="#" class="text-white text-sm font-normal text-nowrap">Empezar ahora</a>
+					<a href="https://www.youtube.com/@IglesiaCejesCentral" target="_blank" class="text-white text-sm font-normal text-nowrap">Empezar ahora</a>
 				</button>
 			</div>
 			<div>
-				<img src="/images/carousel/1.png"
-					alt="Disfruta de toda esta experiencia en vivo solo por YouTube ¡Suscríbete!">
+				<NuxtImg src="/images/carousel/1.webp"
+					alt="Disfruta de toda esta experiencia en vivo solo por YouTube ¡Suscríbete!" sizes="1000px" />
 			</div>
 		</div>
 	</section>
@@ -90,7 +96,7 @@
 }
 
 .unique-event-section {
-	background-image: url('/images/background-1.png');
+	background-image: url('/images/background-1.webp');
 	background-repeat: no-repeat;
 	background-size: cover;
 }
