@@ -9,7 +9,7 @@ useHead({
 <template>
 	<!-- Banner principal -->
 	<section class="banner-principal w-full">
-		<NuxtImg class="w-full" src="/images/banner-nosotros.webp" alt="Nosotros" sizes="1200px" :placeholder="[50, 25]"  />
+		<NuxtImg class="w-full" src="/images/banner-nosotros.webp" alt="Nosotros" sizes="1200px" :placeholder="[50, 25]" />
 	</section>
 	<section class="sobre-nosotros p-10">
 		<div class="max-w-2xl m-auto">
@@ -79,10 +79,7 @@ useHead({
 
 	<section class="w-full flex m-auto p-5 lg:p-20">
 		<div class="max-w-screen-xl m-auto rounded-lg overflow-hidden w-full h-96">
-			<iframe width="100%" height="100%" src="https://www.youtube.com/embed/XGdvOkO1xAU"
-				title="Fiesta Celestial - La Fiesta Más Bonita" frameborder="0"
-				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-				allowfullscreen></iframe>
+			<iframe loading="lazy" width="100%" height="100%" src="https://www.youtube.com/embed/6eL76z_Mxj4" title="Fiesta Celestial 2024 - Volviendo a la Esencia - Trailer Oficial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 		</div>
 	</section>
 
