@@ -46,10 +46,11 @@ useHead({
 		title="Canción Inédita"
 		text="En estos encuentros aglutinamos de todos los estilos y vertientes de la música del folclor autóctona de nuestra región, convirtiéndose en la principal vitrina o institución de comercialización y difusión de la música Góspel Vallenata"
 		background-text="#789744" 
-		image="cancion-inedita.webp" 
+		image="cancion_inedita.webp" 
 		image-central="lengua.webp" 
 		image-central-position="bottom-0"
 		inscription-link="https://forms.gle/MiAMXpyWbRrYjhGi8"
+		inscription-doc="cancion-inedita.pdf"
 		section-id="inedita"
 	/>
 
@@ -59,6 +60,7 @@ useHead({
 		background-text="#F74509" 
 		image="agrupaciones.webp" 
 		inscription-link="https://forms.gle/3JoxSTML4nb7J9wo8" 
+		inscription-doc="agrupaciones-profesional.pdf"
 		:reverse="true"
 		section-id="agrupaciones" 
 	/>
@@ -71,6 +73,7 @@ useHead({
 		image-central="cayena.webp" 
 		image-central-position="-bottom-7"
 		inscription-link="https://forms.gle/dtu6mendR39MWoSd6" 
+		inscription-doc="verseadores.pdf"
 		inscription-button-bg="#F74509" 
 		inscription-button-color="#FFFFFF" 
 		text-color="black"
@@ -83,6 +86,7 @@ useHead({
 		background-text="#789744" 
 		image="agrupacion-infantil.webp" 
 		inscription-link="https://forms.gle/WghXZxXTyCbmi4nFA" 
+		inscription-doc="agrupaciones-infantiles.pdf"
 		:reverse="true"
 		section-id="agrupaciones_infantiles" 
 	/>
