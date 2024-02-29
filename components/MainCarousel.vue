@@ -27,6 +27,7 @@ register()
 <style lang="scss" scoped>
 .main-carousel {
 	height: 150px;
+	overflow: hidden;
 
 	@media (min-width: 400px) {
 		height: 200px;
