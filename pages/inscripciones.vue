@@ -46,7 +46,7 @@ useHead({
 		title="Canción Inédita"
 		text="En estos encuentros aglutinamos de todos los estilos y vertientes de la música del folclor autóctona de nuestra región, convirtiéndose en la principal vitrina o institución de comercialización y difusión de la música Góspel Vallenata"
 		background-text="#789744" 
-		image="cancion_inedita.webp" 
+		image="cancion-inedita.webp" 
 		image-central="lengua.webp" 
 		image-central-position="bottom-0"
 		inscription-link="https://forms.gle/MiAMXpyWbRrYjhGi8"
