@@ -32,6 +32,10 @@ defineProps({
     type: String,
     default: ''
   },
+  inscriptionDoc: {
+    type: String,
+    default: ''
+  },
   inscriptionButtonBg: {
     type: String,
     default: 'white'
@@ -54,19 +58,19 @@ defineProps({
   }
 })
 
-const dialog = ref();
+// const dialog = ref();
 
 // "Show the dialog" button opens the dialog modally
-const openModal = () => {
-  dialog.value.showModal();
-  // document.body.style.overflow = 'hidden'
-}
+// const openModal = () => {
+//   dialog.value.showModal();
+//   // document.body.style.overflow = 'hidden'
+// }
 
-const closeModal = () => {
-  // document.body.style.overflow = 'scroll'
-  dialog.value.close();
+// const closeModal = () => {
+//   // document.body.style.overflow = 'scroll'
+//   dialog.value.close();
 
-}
+// }
 
 </script>
 <template>
@@ -98,13 +102,14 @@ const closeModal = () => {
               class="flex justify-center text-nowrap bg-none border rounded-full px-3 lg:px-12 py-2 lg:py-4" 
               :class="[textColor === 'white' ? 'text-white border-white' : 'text-black border-black']"
             >
-              <span href="#" class="text-sm lg:text-md font-medium">Descargar requisitos en PDF</span>
+              <span href="#" class="text-sm lg:text-md font-medium">
+				<NuxtLink :to="`/files/requisitos/${inscriptionDoc}`" external download>Descargar requisitos en PDF</NuxtLink></span>
             </button>
           </div>
         </div>
         <!-- Imagen principal -->
         <div :class="[reverse ? 'lg:row-start-1 lg:col-start-1 lg:col-end-2' : 'lg:row-start-1 lg:col-start-2 lg:col-end-3']">
-          <NuxtImg class="w-full h-full object-cover" :src="`/images/inscripciones/${image}`" :alt="title" sizes="100%" />
+          <NuxtImg class="w-full h-full object-cover" :src="`/images/inscripciones/${image}`" :alt="title" sizes="640px" />
         </div>
       </div>
 
@@ -112,16 +117,6 @@ const closeModal = () => {
       <NuxtImg v-if="imageCentral" class="image-central hidden lg:block" :class="imageCentralPosition" :src="`/images/inscripciones/${imageCentral}`" :alt="imageCentral" sizes="200px" />
     </div>
   </section>
-
-  <dialog class="p-5 w-full max-w-4xl bg-transparent" v-if="requisitos" ref="dialog">
-    <section class="pt-4 px-10 pb-10 rounded-lg bg-white">
-      <header class="">
-        <button @click="closeModal()" class="ml-auto bg-gray-100 size-11 flex justify-center items-center rounded-full -top-5 right-0" autofocus><img src="~/assets/icons/close.svg" alt="cerrar"></button>
-      </header>
-      <p v-html="requisitos"></p>
-    </section>
-  </dialog>
-
 </template>
 <style lang="scss" scoped>
 .text-section {
