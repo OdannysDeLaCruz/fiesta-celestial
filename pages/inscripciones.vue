@@ -11,7 +11,7 @@ useHead({
 </script>
 <template>
 	<section class="banner-principal w-full">
-		<NuxtImg class="w-full" src="/images/banner-inscripciones.webp" alt="Inscripciones" sizes="100%" />
+		<NuxtImg class="w-full" src="/images/inscripciones/banner-inscripciones.webp" alt="Inscripciones" sizes="720px" />
 	</section>
 
 	<section class="w-full flex m-auto p-5 lg:p-20">

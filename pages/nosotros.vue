@@ -9,7 +9,7 @@ useHead({
 <template>
 	<!-- Banner principal -->
 	<section class="banner-principal w-full">
-		<NuxtImg class="w-full" src="/images/banner-nosotros.webp" alt="Nosotros" sizes="100%" />
+		<NuxtImg class="w-full" src="/images/banner-nosotros.webp" alt="Nosotros" sizes="1200px" :placeholder="[50, 25]"  />
 	</section>
 	<section class="sobre-nosotros p-10">
 		<div class="max-w-2xl m-auto">
