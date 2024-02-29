@@ -7,7 +7,9 @@ useHead({
 })
 </script>
 <template>
-	<MainCarousel />
+	<div class="w-full">
+        <NuxtImg class="w-full" src="/images/carousel/1.webp" :placeholder="[50, 22, 50, 5]" sizes="1080px" alt="Fiesta Celestial" /> 
+    </div>
 	<section class="la-fiesta-mas-bonita-section mt-5 flex items-center justify-between w-full max-w-screen-xl p-3 m-auto">
 		<div class="video__home">
 			<iframe loading="lazy" width="100%" height="100%" src="https://www.youtube.com/embed/6eL76z_Mxj4" title="Fiesta Celestial 2024 - Volviendo a la Esencia - Trailer Oficial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
