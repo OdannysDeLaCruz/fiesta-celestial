@@ -8,12 +8,17 @@ useHead({
 </script>
 <template>
 	<!-- Banner principal -->
-	<section class="banner-principal w-full">
-		<NuxtImg class="w-full" src="/images/banner-nosotros.webp" alt="Nosotros" :placeholder="[50, 25, 20, 5]" />
+	<section class="banner-principal w-full bg-[url('/images/banner-nosotros.png')] bg-cover bg-center bg-no-repeat h-[300px] md:h-screen">
+		<div class="w-full h-full bg-black bg-opacity-10 flex items-center justify-center backdrop-blur-sm">
+			<h1 class="text-white text-2xl sm:text-6xl text-center mb-64">
+				<span> ¡La fiesta más bonita</span> <br><strong>Fiesta Celestial!</strong>
+			</h1>
+			<div class='absolute bottom-0 left-0 w-full h-20 md:h-40 bg-gradient-to-b from-transparent to-orange-200'></div>
+		</div>
 	</section>
-	<section class="sobre-nosotros p-10">
+	<section class="bg-orange-200 p-20">
 		<div class="max-w-2xl m-auto">
-			<h1 class="text-bold text-lg mb-5 text-center">Sobre nosotros</h1>
+			<h1 class="font-bold text-lg mb-5 text-center">Sobre nosotros</h1>
 			<p class="text-center text-sm">Fiesta Celestial es un espacio que fomenta la <strong>adoración y alabanza a
 					Dios</strong> con el género musical <strong>Vallenato Gospel</strong>; Un certamen cultural que
 				promueve
@@ -105,8 +110,3 @@ useHead({
 		</div>
 	</div>
 </template>
-<style lang="scss" scoped>
-.sobre-nosotros {
-	background-color: var(--color-secondary);
-}
-</style>

@@ -9,7 +9,7 @@ useHead({
 </script>
 <template>
 	<section class="banner-principal w-full mb-16">
-		<NuxtImg class="w-full" src="/images/inscripciones/banner-inscripciones.webp" alt="Inscripciones" :placeholder="[50, 15, 20, 5]" />
+		<NuxtImg class="w-full" src="/images/inscripciones/inscripciones.png" alt="Inscripciones" :placeholder="[50, 15, 20, 5]" />
 	</section>
 
 	<!-- <section class="w-full flex m-auto p-5 lg:p-20">
