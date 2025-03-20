@@ -1,5 +1,5 @@
 <template>
-  <div class="algo size-12 bg-tertiary-50 rounded-full flex items-center justify-center fixed z-10 bottom-10 right-10 p-4 shadow-lg shadow-pink-400/50 cursor-pointer" @click="toUp()">
+  <div class="algo size-12 bg-secondary rounded-full flex items-center justify-center fixed z-10 bottom-10 right-10 p-4 cursor-pointer" @click="toUp()">
     <img class="w-full h-full" src="~/assets/icons/chevron-up.svg" alt="Subir">
   </div>
 </template>
@@ -13,7 +13,3 @@ const toUp = () => {
   });
 }
 </script>
-
-<style>
-
-</style>

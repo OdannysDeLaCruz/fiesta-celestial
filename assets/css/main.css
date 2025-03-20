@@ -4,12 +4,35 @@
 @tailwind utilities;
 
 :root {
-    --color-pink: #F2E7CE;
-    --color-red: #F74509;
-    --color-green: #789744;
+	--color-secondary: #f2d5a9;
+	--color-principal: #38063b;
+	--color-tertiary: #8a2f8e;
+}
+
+.text-principal {
+	color: var(--color-principal);
+}
+
+.text-secondary {
+	color: var(--color-secondary);
+}
+
+.text-tertiary {
+	color: var(--color-tertiary);
+}
+
+.bg-principal {
+	background-color: var(--color-principal);
+}
+
+.bg-secondary {
+	background-color: var(--color-secondary);
+}
+
+.bg-tertiary {
+	background-color: var(--color-tertiary);
 }
 
 * {
-    font-family: 'Poppins', sans-serif;
+	font-family: "Poppins", sans-serif;
 }
-

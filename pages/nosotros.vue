@@ -9,18 +9,21 @@ useHead({
 <template>
 	<!-- Banner principal -->
 	<section class="banner-principal w-full">
-		<NuxtImg class="w-full" src="/images/banner-nosotros.webp" alt="Nosotros" sizes="1200px" :placeholder="[50, 25, 20, 5]" />
+		<NuxtImg class="w-full" src="/images/banner-nosotros.webp" alt="Nosotros" :placeholder="[50, 25, 20, 5]" />
 	</section>
 	<section class="sobre-nosotros p-10">
 		<div class="max-w-2xl m-auto">
 			<h1 class="text-bold text-lg mb-5 text-center">Sobre nosotros</h1>
 			<p class="text-center text-sm">Fiesta Celestial es un espacio que fomenta la <strong>adoración y alabanza a
-					Dios</strong> con el género musical <strong>Vallenato Gospel</strong>; Un certamen cultural que promueve
-				el talento con el desarrollo de <strong>concursos de agrupaciones, canción inédita y verseadores profesional
+					Dios</strong> con el género musical <strong>Vallenato Gospel</strong>; Un certamen cultural que
+				promueve
+				el talento con el desarrollo de <strong>concursos de agrupaciones, canción inédita y verseadores
+					profesional
 					y aficionada</strong>.</p> <br>
 
 			<p class="text-center text-sm">Busca principalmente defender, fomentar, cultivar, divulgar y promocionar la
-				música Vallenata Cristiana, la cual durante 27 años se ha convertido en la plataforma más importante de este
+				música Vallenata Cristiana, la cual durante 27 años se ha convertido en la plataforma más importante de
+				este
 				género.</p>
 
 			<div class="flex items-center justify-center mt-8 w-full">
@@ -42,9 +45,12 @@ useHead({
 
 			<!-- Mensaje del pastor -->
 			<div>
-				<p>El <strong>Pastor Angel Florez</strong> Nació el 13 de diciembre de 1947, en Aguachica Cesar, estudió en
-					el Colegio Nacional Loperena donde se hizo bachiller, luego fue a la ciudad de Tunja en donde se graduó
-					como Ingeniero Agrónomo. <br> <br> Se casó con el gran amor de su vida la Pastora Damaris Oñate, ayuda
+				<p>El <strong>Pastor Angel Florez</strong> Nació el 13 de diciembre de 1947, en Aguachica Cesar, estudió
+					en
+					el Colegio Nacional Loperena donde se hizo bachiller, luego fue a la ciudad de Tunja en donde se
+					graduó
+					como Ingeniero Agrónomo. <br> <br> Se casó con el gran amor de su vida la Pastora Damaris Oñate,
+					ayuda
 					idónea, una mujer de Dios con quien formó un hermoso hogar.</p>
 			</div>
 		</div>
@@ -79,7 +85,10 @@ useHead({
 
 	<section class="w-full flex m-auto p-5 lg:p-20">
 		<div class="max-w-screen-xl m-auto rounded-lg overflow-hidden w-full h-96">
-			<iframe loading="lazy" width="100%" height="100%" src="https://www.youtube.com/embed/6eL76z_Mxj4" title="Fiesta Celestial 2024 - Volviendo a la Esencia - Trailer Oficial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+			<iframe loading="lazy" width="100%" height="100%" src="https://www.youtube.com/embed/6eL76z_Mxj4"
+				title="Fiesta Celestial 2024 - Volviendo a la Esencia - Trailer Oficial" frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+				allowfullscreen></iframe>
 		</div>
 	</section>
 
@@ -90,14 +99,14 @@ useHead({
 	<div class="w-full flex m-auto p-5 lg:p-20">
 		<div class="w-full max-w-screen-xl m-auto">
 			<iframe
-				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3923.187517190001!2d-73.2829632852018!3d10.485879292519067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e8ab781a319bf65%3A0xb49c6e6e71450b48!2sColegio%20Comfacesar%20%22RODOLFO%20CAMPO%20SOTO%22!5e0!3m2!1ses!2sco!4v1676328330247!5m2!1ses!2sco"
-				width="100%" height="300" style="border:0;" allowfullscreen="true" loading="lazy"
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3923.2758560393286!2d-73.25164285032189!3d10.478906465216001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e8ab9b5ae80e1d9%3A0x499cc40e903aa597!2sCentro%20Evangelistico%20Jesus%20es%20El%20Se%C3%B1or!5e0!3m2!1ses!2sco!4v1742489359596!5m2!1ses!2sco"
+				width="100%" height="400" style="border:0;" :allowfullscreen="true" loading="lazy"
 				referrerpolicy="no-referrer-when-downgrade"></iframe>
 		</div>
 	</div>
 </template>
 <style lang="scss" scoped>
 .sobre-nosotros {
-	background-color: var(--color-pink);
+	background-color: var(--color-secondary);
 }
 </style>

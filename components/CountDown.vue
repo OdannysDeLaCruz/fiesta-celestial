@@ -82,7 +82,7 @@ export default defineComponent({
 		}
 
 		const updateTimer = () => {
-			timer.value = defineTimer('2024-05-02 00:00:00')
+			timer.value = defineTimer('2025-05-01 00:00:00')
 		}
 		
 		onBeforeMount(() => {
@@ -111,6 +111,7 @@ export default defineComponent({
         font-size: 18px;
         line-height: 37px;
         font-weight: 500;
+		color: var(--color-principal);
     }
     
     .counter__timer {
@@ -119,8 +120,9 @@ export default defineComponent({
     
         .counter__timer__item {
             background: #fff;
+			color: var(--color-principal);
             font-size: 25px;
-            font-weight: 600;
+            font-weight: 800;
             line-height: 49.5px;
             display: flex;
             flex-direction: column;

@@ -58,20 +58,6 @@ defineProps({
   }
 })
 
-// const dialog = ref();
-
-// "Show the dialog" button opens the dialog modally
-// const openModal = () => {
-//   dialog.value.showModal();
-//   // document.body.style.overflow = 'hidden'
-// }
-
-// const closeModal = () => {
-//   // document.body.style.overflow = 'scroll'
-//   dialog.value.close();
-
-// }
-
 </script>
 <template>
   <section class="w-full flex justify-center items-center p-5 lg:p-10" :id="sectionId">
@@ -103,7 +89,7 @@ defineProps({
               :class="[textColor === 'white' ? 'text-white border-white' : 'text-black border-black']"
             >
               <span href="#" class="text-sm lg:text-md font-medium">
-				<NuxtLink :to="`/files/requisitos/${inscriptionDoc}`" external download>Descargar requisitos en PDF</NuxtLink></span>
+				<NuxtLink :to="`/files/requisitos/${inscriptionDoc}`" external download>Requisitos</NuxtLink></span>
             </button>
           </div>
         </div>
