@@ -2,10 +2,10 @@
 	<footer class="container-full bg-tertiary w-full p-5 lg:p-16">
 		<div class="container max-w-screen-xl m-auto flex align-center lg:justify-between flex-col lg:flex-row gap-16">
 			<div class='flex align-center justify-center lg:justify-start w-full lg:w-2/5'>
-				<NuxtImg src="/images/logotipo.png" alt="Fiesta Celestial" sizes="240px" />
+				<img src="/images/logotipo.png" alt="Fiesta Celestial" width="240px" />
 			</div>
 			<div class='flex align-center justify-center w-full lg:w-3/5 lg:align-right flex-col'>
-				<div class='flex flex-row align-center justify-center lg:ju stify-end gap-5 mb-10 md:mb-5'>
+				<div class='flex flex-row align-center justify-center lg:justify-end flex-wrap gap-5 mb-10 md:mb-5'>
 					<input
 						class='rounded-full bg-transparent text-white border border-white p-2 pl-5 placeholder:text-white text-sm w-[250px] lg:w-[600px]'
 						placeholder='Subscribe y entérate de todo' type="text" name="" id="" value="">

@@ -10,7 +10,7 @@
           </div>
         </div>
         <div class="rounded-lg overflow-hidden">
-          <NuxtImg class="w-full" src="/images/map.webp" alt="Dirección | Calle 13A #9-26 Barrio Cañahuate" sizes="600px" />
+          <img class="w-full" src="/images/map.webp" alt="Dirección | Calle 13A #9-26 Barrio Cañahuate" width="600px" />
         </div>
         <div class="flex flex-col mt-8">
           <span><strong>Dirección:</strong>  Calle 13A #9-26 Barrio Cañahuate</span>

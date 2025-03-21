@@ -2,7 +2,7 @@
 	<section class="relative w-full p-5 py-7 lg:py-20">
 		<div
 			class="max-w-screen-xl m-auto bg-white flex flex-col lg:grid lg:grid-cols-2 gap-10 lg:gap-28 lg:px-24 py-7 rounded-xl">
-			<div class="relative bg-principal p-5 lg:p-16 rounded-xl">
+			<div class="relative bg-principal p-5 lg:p-16 pt-20 rounded-xl">
 				<div class='
 					w-[100px]
 					h-[100px]
@@ -12,8 +12,8 @@
 					'>
 					<div class='
 						bg-[url("/images/circulo.png")]
-						w-[200px]
-						h-[200px]
+						w-[100px]
+						h-[100px]
 						absolute
 						top-0
 						z-0

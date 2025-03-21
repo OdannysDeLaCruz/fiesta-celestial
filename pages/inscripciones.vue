@@ -9,7 +9,7 @@ useHead({
 </script>
 <template>
 	<section class="banner-principal w-full mb-16">
-		<NuxtImg class="w-full" src="/images/inscripciones/inscripciones.png" alt="Inscripciones" :placeholder="[50, 15, 20, 5]" />
+		<img class="w-full" src="/images/inscripciones/inscripciones.png" alt="Inscripciones"/>
 	</section>
 
 	<!-- <section class="w-full flex m-auto p-5 lg:p-20">
@@ -40,28 +40,16 @@ useHead({
 		</div>
 	</section> -->
 
-	<InscriptionSection 
-		title="Canción Inédita"
+	<InscriptionSection title="Canción Inédita"
 		text="En estos encuentros aglutinamos de todos los estilos y vertientes de la música del folclor autóctona de nuestra región, convirtiéndose en la principal vitrina o institución de comercialización y difusión de la música Góspel Vallenata"
-		background-text="#8a2f8e" 
-		image="cancion-inedita.webp" 
-		image-central="lengua.webp" 
-		image-central-position="bottom-0"
-		inscription-link="https://forms.gle/MiAMXpyWbRrYjhGi8"
-		inscription-doc="cancion-inedita.pdf"
-		section-id="inedita"
-	/>
+		background-text="#8a2f8e" image="cancion-inedita.webp" image-central="lengua.webp"
+		image-central-position="bottom-0" inscription-link="https://forms.gle/MiAMXpyWbRrYjhGi8"
+		inscription-doc="cancion-inedita.pdf" section-id="inedita" />
 
-	<InscriptionSection 
-		title="Agrupaciones"
+	<InscriptionSection title="Agrupaciones"
 		text="Se realiza el concurso de Agrupaciones Profesionales para quienes ya han puesto su música en el acetato y Aficionadas para que participen quienes aún no han grabado. <br/> <br/> Incentivamos el talento musical y creamos una plataforma para para que las agrupaciones cristianas se muestren, ayudando al fortalecimiento de nuestras raíces musicales."
-		background-text="#38063b" 
-		image="agrupaciones.webp" 
-		inscription-link="https://forms.gle/3JoxSTML4nb7J9wo8" 
-		inscription-doc="agrupaciones-profesional.pdf"
-		:reverse="true"
-		section-id="agrupaciones" 
-	/>
+		background-text="#38063b" image="agrupaciones.webp" inscription-link="https://forms.gle/3JoxSTML4nb7J9wo8"
+		inscription-doc="agrupaciones-profesional.pdf" :reverse="true" section-id="agrupaciones" />
 
 	<div class='mb-16'></div>
 

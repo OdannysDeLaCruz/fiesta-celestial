@@ -8,8 +8,7 @@ useHead({
 </script>
 <template>
 	<div class="w-full">
-		<NuxtImg class="w-full" src="/images/carousel/1.png" :placeholder="[50, 22, 50, 5]"
-			alt="Fiesta Celestial" />
+		<img class="w-full" src="/images/carousel/1.png" alt="Fiesta Celestial" />
 	</div>
 	<section
 		class="la-fiesta-mas-bonita-section mt-5 flex items-center justify-between w-full max-w-screen-xl p-3 m-auto">
@@ -65,8 +64,8 @@ useHead({
 				</button>
 			</div>
 			<div>
-				<NuxtImg src="/images/carousel/1.png"
-					alt="Disfruta de toda esta experiencia en vivo solo por YouTube ¡Suscríbete!" sizes="1000px" />
+				<img src="/images/carousel/1.png"
+					alt="Disfruta de toda esta experiencia en vivo solo por YouTube ¡Suscríbete!" class="w-full" />
 			</div>
 		</div>
 	</section>

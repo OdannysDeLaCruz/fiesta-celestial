@@ -65,8 +65,8 @@ watch(route, () => {
 									Nosotros</NuxtLink>
 								<NuxtLink to="/inscripciones"
 									class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
-									Inscripciones a concursos</NuxtLink>
-								<!-- <NuxtLink to="/haz-parte" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Haz parte</NuxtLink> -->
+									Inscripciones</NuxtLink>
+								<NuxtLink to="/haz-parte" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Haz parte</NuxtLink>
 								<NuxtLink to="/#contacto"
 									class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-red-600 hover:bg-gray-50">
 									Contacto</NuxtLink>

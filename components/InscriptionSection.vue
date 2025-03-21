@@ -95,12 +95,12 @@ defineProps({
         </div>
         <!-- Imagen principal -->
         <div :class="[reverse ? 'lg:row-start-1 lg:col-start-1 lg:col-end-2' : 'lg:row-start-1 lg:col-start-2 lg:col-end-3']">
-          <NuxtImg class="w-full h-full object-cover" :src="`/images/inscripciones/${image}`" :alt="title" sizes="640px" />
+          <img class="w-full h-full object-cover" :src="`/images/inscripciones/${image}`" :alt="title" width="640px" />
         </div>
       </div>
 
       <!-- Imagen central -->
-      <NuxtImg v-if="imageCentral" class="image-central hidden lg:block" :class="imageCentralPosition" :src="`/images/inscripciones/${imageCentral}`" :alt="imageCentral" sizes="200px" />
+      <img v-if="imageCentral" class="image-central hidden lg:block" :class="imageCentralPosition" :src="`/images/inscripciones/${imageCentral}`" :alt="imageCentral" sizes="200px" />
     </div>
   </section>
 </template>

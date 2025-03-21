@@ -8,12 +8,14 @@ useHead({
 </script>
 <template>
 	<!-- Banner principal -->
-	<section class="banner-principal w-full bg-[url('/images/banner-nosotros.png')] bg-cover bg-center bg-no-repeat h-[300px] md:h-screen">
+	<section
+		class="w-full bg-[url('/images/banner-nosotros.png')] bg-cover bg-center bg-no-repeat h-[300px] md:h-screen">
 		<div class="w-full h-full bg-black bg-opacity-10 flex items-center justify-center backdrop-blur-sm">
-			<h1 class="text-white text-2xl sm:text-6xl text-center mb-64">
+			<h1 class="text-white text-2xl md:text-6xl text-center mb-20 md:mb-64">
 				<span> ¡La fiesta más bonita</span> <br><strong>Fiesta Celestial!</strong>
 			</h1>
-			<div class='absolute bottom-0 left-0 w-full h-20 md:h-40 bg-gradient-to-b from-transparent to-orange-200'></div>
+			<div class='absolute bottom-0 left-0 w-full h-20 md:h-40 bg-gradient-to-b from-transparent to-orange-200'>
+			</div>
 		</div>
 	</section>
 	<section class="bg-orange-200 p-20">
@@ -41,7 +43,7 @@ useHead({
 		<div class="max-w-screen-xl m-auto grid grid-cols-1 grid-row-2 md:grid md:grid-cols-2 gap-10">
 			<!-- Perfil del pastor -->
 			<div class="flex flex-col lg:flex-row items-center gap-10">
-				<NuxtImg class="w-40" src="/images/foto-pastor.webp" alt="Pastor Angel Florez" sizes="200px" />
+				<img class="w-40" src="/images/foto-pastor.webp" alt="Pastor Angel Florez" width="200px" />
 				<span class="flex flex-col items-center lg:items-start">
 					<h3 class="text-xl text-bold"><strong>Pastor Angel Florez León</strong></h3>
 					<h6 class="text-base text-normal">Fundador</h6>
